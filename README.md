@@ -76,6 +76,7 @@ Grade Evaluator App/
 │
 └── README.md
     └── Project documentation
+    
 ▶ How to Run the Program
 1. Run the application:
 python main.py
