@@ -28,6 +28,7 @@ Subject grades
 Computed GWA
 Target GWA
 Final academic status
+
 🧠 System Design Overview
 
 The system is implemented in a single-file architecture (main.py), where all classes and functions are organized internally for simplicity and maintainability.
@@ -38,11 +39,13 @@ Clear separation of logic using classes
 Easy readability for beginners
 Minimal dependencies
 Direct execution without complex setup
+
 🧪 Testing Approach
 
 Automated testing was implemented using pytest to ensure system reliability and correctness.
 
 ✔ Features Tested:
+
 Student object initialization
 Subject grade storage
 GWA computation accuracy
@@ -51,8 +54,11 @@ Goal comparison logic
 Overall system behavior validation
 ▶ Run Tests:
 py -m pytest -v
+
 📁 Project Structure
+
 Grade Evaluator App/
+
 
 │
 ├── main.py
@@ -76,22 +82,23 @@ python main.py
 2. Run automated tests:
 py -m pytest -v
 
-or
-
-pytest
 🧩 Technologies Used
+
 Python 3.14
 Object-Oriented Programming (OOP)
 Pytest (Unit Testing Framework)
 Single-file system architecture
 Basic file execution environment
+
 📊 System Workflow
+
 User inputs student name and subject grades
 System validates and stores data
 GWA is computed automatically
 User sets academic goal (optional)
 System compares GWA with goal
 Final evaluation is displayed
+
 👨‍💻 Developer Note
 
 This project was developed as an academic requirement to demonstrate understanding of programming fundamentals, object-oriented design, and automated testing using Python.
@@ -103,6 +110,7 @@ The system was designed to be simple, efficient, and beginner-friendly while sti
 All automated test cases passed successfully using pytest, confirming that the system functions correctly and produces accurate academic evaluations.
 
 📌 Summary
+
 The Student Grade Evaluator App provides an efficient way for students to compute and track academic performance through automation. It demonstrates core programming principles including OOP, modular logic design, and unit testing, making it both an educational and functional system.
 
 The Student Grade Evaluator App provides an efficient way for students to compute and track academic performance through automation. It demonstrates core programming principles including OOP, modular logic design, and unit testing, making it both an educational and functional system.
