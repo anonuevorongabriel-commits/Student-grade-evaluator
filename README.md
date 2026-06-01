@@ -1,4 +1,5 @@
 📘 Student Grade Evaluator App
+
 📌 Application Description
 
 The Student Grade Evaluator App is a standalone Python-based system designed to help students efficiently compute, monitor, and evaluate their academic performance. The application automates grade processing, removing the need for manual computation and reducing the risk of errors in calculating academic results such as the General Weighted Average (GWA).
