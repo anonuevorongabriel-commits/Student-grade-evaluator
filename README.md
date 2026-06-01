@@ -55,27 +55,6 @@ Overall system behavior validation
 ▶ Run Tests:
 py -m pytest -v
 
-📁 Project Structure
-
-Grade Evaluator App/
-
-
-│
-├── main.py
-│   ├── Student Class
-│   ├── GradeProcessor Class
-│   ├── Grade computation logic
-│   ├── Goal setting and comparison
-│   └── Output display system
-│
-├── test_main.py
-│   ├── Unit tests using pytest
-│   ├── Student validation tests
-│   ├── Grade computation tests
-│   └── Goal evaluation tests
-│
-└── README.md
-    └── Project documentation
     
 ▶ How to Run the Program
 1. Run the application:
