@@ -113,6 +113,7 @@ class GradeProcessor:
         return student
 
 
+
 class AdvancedGradeProcessor(
     GradeProcessor
 ):
@@ -122,6 +123,7 @@ class AdvancedGradeProcessor(
         subjects
     ):
 
+        
         return super().calculate_gwa(
             subjects
         )
@@ -157,7 +159,7 @@ def save_results(student):
         for subject, result in student.evaluation.items():
 
             file.write(
-                f"{subject}: {result}\n"
+                f"{subject}: {student.subjects[subject]} - {result.lower()}\n"
             )
 
 
@@ -200,12 +202,12 @@ def main():
             )
 
             subject = input(
-                "Subject Name: "
+                "Enter subject: "
             )
 
             grade = float(
                 input(
-                    "Grade: "
+                    "Enter grade: "
                 )
             )
 
@@ -217,7 +219,7 @@ def main():
 
                 grade = float(
                     input(
-                        "Enter Grade Again: "
+                        "Enter grade again: "
                     )
                 )
 
@@ -225,7 +227,7 @@ def main():
 
         goal = float(
             input(
-                "\nEnter Target GWA: "
+                "\nEnter your target GWA: "
             )
         )
 
@@ -268,9 +270,10 @@ def main():
             f"Overall Status: {student.status}"
         )
 
-        print(
-            f"Goal Comparison: {goal_result}"
-        )
+        if goal_result == "Goal Achieved":
+            print("Target GWA Achieved")
+        else:
+            print("You did not reach your target GWA")
 
         print(
             "\nSubject Evaluation:"
@@ -279,7 +282,7 @@ def main():
         for subject, result in student.evaluation.items():
 
             print(
-                f"{subject}: {result}"
+                f"- {subject}: {student.subjects[subject]} - {result.lower()}"
             )
 
         save_results(
